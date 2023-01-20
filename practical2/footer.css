@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  font-family: Roboto, Arial;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  padding: 40px;
+}
+
+.join, .about, .support {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(182, 182, 182);
+}
+.join a, .about a, .support a {
+  color: rgb(206, 205, 205);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.15s ease-in-out;
+}
+.join a:hover, .about a:hover, .support a:hover {
+  color: white;
+}
+
+.about {
+  margin-top: 15px;
+}
+
+.social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: white;
+}
+.social .social-link {
+  font-size: 30px;
+  padding-bottom: 25px;
+  padding: 0 30px;
+  color: rgb(192, 192, 192);
+  transition: color 0.1s;
+}
+.social .social-link:hover {
+  color: white;
+}
+
+.footer-links {
+  margin-top: 30px;
+  text-align: center;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer-links li {
+  display: inline-block;
+  margin: 0 30px;
+}
+.footer-links a {
+  color: rgb(192, 192, 192);
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+.footer-links a:hover {
+  color: white;
+}
+
+.support {
+  margin-top: 50px;
+}
+.support a {
+  margin-left: 10px;
+}
+
+.copyright {
+  font-size: 17px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 10px;
+  color: rgb(161, 161, 161);
+}/*# sourceMappingURL=footer.css.map */

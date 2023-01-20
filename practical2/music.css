@@ -1,0 +1,92 @@
+
+.bg-img{
+	background: url('mic2.png') no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+#menu, #menu ul
+{
+	list-style: none;
+	border: 1px solid #000;
+	background-color: black;
+	padding: 0 0 25px 0;
+	margin: 0;
+    height: 20px;
+}
+li img{
+	height: 20px;
+	width: 20px;
+	margin-top:5px;
+}
+#menu li
+{
+	
+	float: left;
+	margin-right: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+	position: relative;
+    padding-top: 10px;
+    background-color: black;
+}
+#menu ul
+{
+	position: absolute;
+	top: 25px;
+	left: -1px;
+	width: 150px;
+	padding: 0;
+	display: none;
+    margin-top: 10px;
+}
+#menu ul li
+{
+	float: none;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+}
+#menu a:link, #menu a:visited
+{
+	display: block;
+	font-family: Tahoma;
+	font-size: 0.75em;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+	color: #fff;
+	padding: 7px;
+}
+#menu li:hover
+{
+	background-color: #5a5a5a;
+    height: fit-content;
+}
+#menu li:hover ul
+{
+	display: block;
+} 
+/* .hero-section{
+	
+	height: 70px;
+	border-radius: 10px;
+    text-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+} */
+h1{
+	
+    text-align: center;
+    margin-top: 150px;
+    font-size: 50px;
+	color: white;
+	text-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+	font-weight: 600px;
+}
+p{
+	padding-left: 50px;
+	padding-top: 30px;
+	font-size: 25px;
+	font-weight: 35px;
+	color:#d0dcf8;
+	text-shadow: 0 10px 15px rgba(0, 0, 0, 0.911);
+  }
+
