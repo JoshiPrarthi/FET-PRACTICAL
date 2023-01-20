@@ -1,0 +1,60 @@
+header h3{
+	text-align: center;
+	padding-top: 80px;
+	font-family: 'Yanone Kaffeesatz', cursive;
+	font-size:50px;
+	color:rgb(68, 252, 236);
+}
+header img{
+	border-style: solid;
+	border: 1px solid rgb(2, 0, 0);
+	border-radius:5px;
+    
+}
+header h4{
+	text-align: center;
+	font-family: 'Yanone Kaffeesatz', cursive;
+	font-size:30px;
+	color:rgb(249, 251, 252);
+}
+header p{
+	text-align: center;
+	font-family: 'Yanone Kaffeesatz', cursive;
+	font-size:30px;
+	color:rgb(252, 248, 248);
+}
+ul{
+	list-style-type:none;
+	margin:0;
+	padding-top:3px;
+	overflow:hidden;
+	background-color:rgba(83, 237, 248, 0.87);
+	position:sticky;
+	top:0;
+}
+li{
+	float:left;
+}
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight:bold;
+}
+li a:hover{
+	background-color:rgba(8, 70, 70, 0.918);
+}
+.active{
+	background-color:rgba(5, 5, 5, 0.527);
+}
+li a:active{
+	background-color:rgba(248, 251, 252, 0.877);
+}
+body {
+    background-image: url("bg6.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
