@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>vote eligibility</title>
+        <script>
+            alert("Welcome! to the webpage.");
+            function agev()
+            {
+                var name = document.getElementById("name").value;
+                var age = document.getElementById("age").value;
+                var cage = document.getElementById("cage").value;
+                if(age==cage)
+                {
+                    if(age>=18)
+                    {
+                        alert("Hello!.You are eligible to vote!");
+                    }
+                    else
+                    {
+                        alert("Sorry!.You are not eligible to vote!");
+                    }
+                }
+                else 
+                {
+                    alert("You have entered the wrong age , PLease Enter again!!");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Name : <input type="text" pattern="[a-zA-Z]*" id="name" required autofocus/> <br/><br>
+        Age:<input type="text" id="age" required pattern="[0-9]{3}"/> <br/><br>
+        Confirm Age:<input type="text" id="cage" required pattern="[0-9]{3}"/> <br/><br>
+        <button onclick="agev()">Submit</button>
+    </body>
+</html>

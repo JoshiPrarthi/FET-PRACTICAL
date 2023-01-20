@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Cowin Application</title>
+        <script>
+            let name = prompt("Enter your name:");
+            let nat = prompt("Enter your nationality:");
+            let vac = prompt("Enter the no. of doses you have taken:");
+            txt = confirm(`Name : ${name} \n Nationality : ${nat} \n Doses Taken : ${vac} \n Do you wanna to continue?`);
+            if(txt)
+            {
+                if(vac>=1)
+                {
+                    alert("You can access the portal!");
+                }
+                else
+                {
+                    alert("Sorry! You have to  atleast completed 1 dose, you cannot access the portal!");
+                }
+            }
+            else 
+            {
+                alert("see you next time!!.You pressed CANCEL");
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
