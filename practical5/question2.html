@@ -1,0 +1,30 @@
+
+    <html>
+    <head>
+        <title>employee salary</title>
+        
+        
+    </head>
+    <body>
+        <p>for objects</p>
+        <p id="demo"> </p>
+        <p  id="demo1"> </p>
+        <p id="demo2"> </p>
+        <p  id="demo3"> </p>
+        <p id="demo4"> </p>
+        <script>
+            let emp1={Name:"pari",Work_days:25};
+            let emp2={Name:"dhruvi",Work_days:28};
+            let emp3={Name:"yash",Work_days:18};
+            let emp4={Name:"om",Work_days:10};
+            let emp5={Name:"surbhi",Work_days:5};
+            let salary_perday=500;
+            document.getElementById("demo").innerHTML="Name: " + emp1.Name +" Salary: "+emp1.Work_days*salary_perday;
+            document.getElementById("demo1").innerHTML="Name: " + emp2.Name +" Salary: "+emp2.Work_days*salary_perday;
+            document.getElementById("demo2").innerHTML="Name: " + emp3.Name +" Salary: "+emp3.Work_days*salary_perday;
+            document.getElementById("demo3").innerHTML="Name: " + emp2.Name +" Salary: "+emp4.Work_days*salary_perday;
+            document.getElementById("demo4").innerHTML="Name: " + emp2.Name +" Salary: "+emp5.Work_days*salary_perday;
+            
+        </script>
+    </body>
+</html>
