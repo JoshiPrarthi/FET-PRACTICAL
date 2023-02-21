@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>array</title>
+        <script>
+            function arrayCorrect() {
+            const array = [NaN, 0, 15, false, -22, ' ', undefined, 47, null];
+            const cArray = array.filter(a => typeof a === "number" && !isNaN(a)&& a !== 0);
+            alert(`Number of elements remaining: ${cArray.length}`);
+            shuffle(cArray);
+            document.getElementById('result').innerHTML = cArray;
+                                     }
+function shuffle(array) 
+{
+for (let i = array.length - 1; i > 0; i--) 
+{
+const j = Math.floor(Math.random() * (i + 1));
+[array[i], array[j]] = [array[j], array[i]];
+}
+}
+        </script>
+    </head>
+    <body>
+      <center>
+        <h1>[NaN, 0, 15, false, -22, ' ', undefined, 47, null]</h1>
+        <button onclick="arrayCorrect()">Correct It !</button>
+        <h1 id="result"></h1>
+      </center>
+    </body>
+</html>
