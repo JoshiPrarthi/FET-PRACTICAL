@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Promises</title>
+    </head>
+    <body>
+        <h1>Kayo's Cake:</h1>
+        <p>Kayo: I promise to make a cake for your Birthday.</p>
+        Kayo is: <input type="text" id="health"/> <br/><br>
+        I have prepared:<input type="number" id="cake"/> cakes<br/><br>
+        <button onclick="pari()">Submit</button>
+        <p id="pj"></p>
+        <p id="jp"></p>
+        <script>
+            function pari()
+            {
+                function myDisplay(some)
+                {
+                    document.getElementById("pj").innerHTML=some;
+                }
+                let myPromise=new Promise(function(myResolve,myReject)
+                {
+                    let x=document.getElementById("health").value;
+                    let y=document.getElementById("cake").value;
+                    if(x=='healthy' && y>0)
+                    {
+                        myResolve('AS Kayo is healthy.\nI have '+y+' cakes and I am happy.');
+                    }
+                    else
+                    {
+                        myReject('As Kayo is sick.\nThere is no cake and I am sad.')
+                    }
+                });
+                myPromise.then
+                (
+                    function(value) {myDisplay(value);},
+                    function(error) {myDisplay(error);}
+                );
+                document.getElementById("jp").innerHTML='I still have a party!';
+            }
+        </script>
+    </body>
+</html>
